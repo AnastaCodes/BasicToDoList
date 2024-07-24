@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="main" role="main">
+    <div class="title-container">
+        <h1>ToDo List</h1>
+    </div>
+    <div class="main-container">
+        <div class="header-container">
+            <form action="" id="addItem">
+                <label for="add" class="visually-hidden">Add Task</label>
+                <input type="text" id="add" placeholder="Добавить задачу" aria-label="Add task" />
+                <input type="submit" value="Добавить">
+            </form>
+        </div>
+
+        <div id="body-container">
+            <ul aria-live="polite">
+            </ul>
+        </div>
+        <div class="footer-container">
+            <button type="button" id="deleteCompleted" aria-label="Delete completed tasks">Удалить завершенные</button>
+            <button type="button" id="deleteAll" aria-label="Delete all tasks">Удалить все</button>
+        </div>
+    </div>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
