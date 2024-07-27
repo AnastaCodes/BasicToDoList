@@ -17,3 +17,16 @@ BasicToDoList is a simple to-do list application that allows users to add, delet
 
 You can use the application [here](https://anastacodes.github.io/BasicToDoList/).
 
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+## Acknowledgments
+
+- Inspired by the need for simple task management tools.
+
+## Contact
+
+If you have any questions or suggestions, please feel free to reach out.
