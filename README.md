@@ -1,32 +1,26 @@
-# BasicToDoList
+# Basic To-Do List
 
-## Description
+**A no-frills task manager that remembers your list between visits.**
 
-BasicToDoList is a simple to-do list application that allows users to add, delete, and mark tasks as completed. The application uses local storage to persist tasks across sessions.
+![Basic To-Do List screenshot](docs/screenshot.jpg)
+
+**[Try it live →](https://anastacodes.github.io/BasicToDoList/)**
 
 ## Features
 
-- Add new tasks.
-- Delete individual tasks.
-- Mark tasks as completed.
-- Delete all tasks.
-- Delete only completed tasks.
-- Tasks are saved in local storage.
+- Add, complete and delete tasks
+- Bulk actions: clear all tasks or only the completed ones
+- Tasks persist across sessions via `localStorage`
+- Accessible controls with `aria-label`s
+- Built with vanilla HTML, CSS and JavaScript — no dependencies
 
-## Demo
+## Run locally
 
-You can use the application [here](https://anastacodes.github.io/BasicToDoList/).
+```bash
+git clone https://github.com/AnastaCodes/BasicToDoList.git
+open BasicToDoList/index.html
+```
 
-## Technologies Used
+## See also
 
-- HTML
-- CSS
-- JavaScript
-
-## Acknowledgments
-
-- Inspired by the need for simple task management tools.
-
-## Contact
-
-If you have any questions or suggestions, please feel free to reach out.
+[EditableShoppingList](https://github.com/AnastaCodes/EditableShoppingList) — the next iteration of this app with inline editing.
