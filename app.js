@@ -94,7 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Delete all tasks
   btnDeleteAll.addEventListener("click", function () {
     ul.innerHTML = "";
-    localStorage.clear();
+    localArr = [];
+    localStorage.removeItem("toDoList");
     checkUl();
   });
 
