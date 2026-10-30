@@ -30,13 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
     task.innerHTML = `
       <div class="input-container">
           <input class="checkbox" id="${id}" type="checkbox"> 
-              <label class="checkboxLabel" for="${id}">
-                  ${text}
-              </label> 
+              <label class="checkboxLabel" for="${id}"></label>
           </div>
       <button class="deleteItem" aria-label="Delete task">
         <i class="fa-solid fa-xmark"></i>
       </button>`;
+    // textContent, not innerHTML: user text must never be parsed as markup
+    task.querySelector(".checkboxLabel").textContent = text;
 
     if (isDone) {
       task.querySelector(".checkbox").classList.add("check");
@@ -94,7 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Delete all tasks
   btnDeleteAll.addEventListener("click", function () {
     ul.innerHTML = "";
-    localStorage.clear();
+    localArr = [];
+    localStorage.removeItem("toDoList");
     checkUl();
   });
 
